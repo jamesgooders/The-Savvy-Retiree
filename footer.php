@@ -28,7 +28,7 @@
 			</div>
 
 			<div id="right-footer">
-				<h3>Follow us on</h3>
+				<h3 class="follow-header">Follow us on</h3>
 				<div id="social-media-footer">
 					<ul>
 						<li>

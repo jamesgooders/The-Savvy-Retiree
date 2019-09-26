@@ -27,6 +27,10 @@ h1 {
 	margin-top: 8vh;
 }
 
+.follow-header {
+	color: white;
+}
+
 #sv-header {
 	font-family: 'Baskerville', serif;
 	font-weight: normal;
@@ -137,7 +141,7 @@ nav a {
 
 nav a:hover {
 	text-decoration: none;
-	color: #b89243;
+	color: #2fa6df;
 }
 
 nav ul {
@@ -150,7 +154,7 @@ nav ul {
 }
 
 .active {
-	color: #b89243;
+	color: #2fa6df;
 }
 
 #logo-img {
@@ -185,7 +189,7 @@ nav ul {
 }
 
 #search-icon:hover {
-	color: #b89243;
+	color: #2fa6df;
 }
 
 /*Slideout Menu*/
@@ -252,7 +256,9 @@ section {
 	padding: 4px 48px;
 	background-color: #eee;
 	transition: all 0.4s;
-	color: #b89243;
+	color: #2fa6df;
+	border-left: 3px solid #2fa6df;
+	border-right: 3px solid #2fa6df;
 }
 
 /*Section Source*/
@@ -324,8 +330,12 @@ section {
 	background: #eee;
 	text-decoration: none;
 	padding: 8px 64px 8px 24px;
-	color: #b89243;
+	color: #2fa6df;
+	border-left: 3px solid #2fa6df;
+	border-right: 3px solid #2fa6df;
 }
+
+
 
 /*Footer*/
 
@@ -380,7 +390,7 @@ footer #social-media-footer ul li {
 }
 
 footer #social-media-footer ul li:hover a .fab {
-	color: #b89243;
+	color: #2fa6df;
 }
 
 #left-footer h3 {
@@ -413,7 +423,7 @@ footer #social-media-footer ul li:hover a .fab {
 	padding: 4px 48px;
 	background-color: #eee;
 	transition: all 0.4s;
-	color: #b89243;
+	color: #2fa6df;
 }
 
 .card-meta {
