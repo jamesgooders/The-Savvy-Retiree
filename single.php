@@ -4,7 +4,7 @@
 		the_post();
 ?>
 
-		<h2 class="page-heading"><?php the_title(); ?></h2>
+		<h2 class="page-heading-single"><?php the_title(); ?></h2>
 		<div id="post-container">
 			<section id="blogpost">
 				<div class="card">
