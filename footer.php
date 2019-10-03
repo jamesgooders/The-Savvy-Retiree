@@ -7,12 +7,15 @@
 						<li>
 							<a href="<?php echo site_url(''); ?>">Home</a>
 						</li>
+						
 						<li>
-							<a href="#<?php echo site_url('/blog'); ?>">Blog</a>
+							<a href="<?php echo site_url('/projects'); ?>">Topics</a>
 						</li>
+
 						<li>
-							<a href="<?php echo site_url('/projects'); ?>">Projects</a>
+							<a href="#<?php echo site_url('/blog'); ?>">Latest Articles</a>
 						</li>
+						
 						<li>
 							<a href="<?php echo site_url('/about'); ?>">About</a>
 						</li>

@@ -14,9 +14,13 @@
 
 		<ul>
 		<li><a href="<?php echo site_url(''); ?>">Home</a></li>
-		<li><a href="<?php echo site_url('/blog'); ?>">Blog</a></li>
-		<li><a href="<?php echo site_url('/projects'); ?>">Projects</a></li>
-		<li><a href="<?php echo site_url('/about'); ?>">About</a></li>
+		<li><a href="<?php echo site_url('/blog'); ?>">Retire Early</a></li>
+		<li><a href="<?php echo site_url('/projects'); ?>">Right Sizing</a></li>
+		<li><a href="<?php echo site_url('/about'); ?>">Health & Wellbeing</a></li>
+		<li><a href="<?php echo site_url('/about'); ?>">Roving Retirement</a></li>
+		<li><a href="<?php echo site_url('/about'); ?>">Lifestyle</a></li>
+		<li><a href="<?php echo site_url('/about'); ?>">Savings</a></li>
+		<li><a href="<?php echo site_url('/about'); ?>">Social Security</a></li>
 		
 		<div class="searchbox-slide-menu">
 			<?php get_search_form(); ?>
@@ -39,19 +43,43 @@
 		<li><a href="<?php echo site_url(''); ?>"
 			<?php if(is_front_page()) echo 'class="active"' ?>
 			>Home</a>
-	</li>
+		</li>
+		
 		<li><a href="<?php echo site_url('/blog'); ?>"
 			<?php if(get_post_type() == 'post') echo 'class="active"' ?>
-		>Blog</a>
-	</li>
+		>Retire Early</a>
+		</li>
+		
 		<li><a href="<?php echo site_url('/projects'); ?>"
 		<?php if(get_post_type() == 'project') echo 'class="active"' ?>
-		>Projects</a>
-	</li>
+		>Right Sizing</a>
+		</li>
+		
 		<li><a href="<?php echo site_url('/about'); ?>"
 		<?php if(is_page('about')) echo 'class="active"' ?>
-		>About</a>
-	</li>
+		>Health & Wellbeing</a>
+		</li>
+		
+		<li><a href="<?php echo site_url('/about'); ?>"
+		<?php if(is_page('about')) echo 'class="active"' ?>
+		>Roving Retirement</a>
+		</li>
+
+		<li><a href="<?php echo site_url('/about'); ?>"
+		<?php if(is_page('about')) echo 'class="active"' ?>
+		>Lifestyle</a>
+		</li>
+
+		<li><a href="<?php echo site_url('/about'); ?>"
+		<?php if(is_page('about')) echo 'class="active"' ?>
+		>Savings</a>
+		</li>
+
+		<li><a href="<?php echo site_url('/about'); ?>"
+		<?php if(is_page('about')) echo 'class="active"' ?>
+		>Social Security</a>
+		</li>
+
 		<li>
 			<div id="search-icon">
 				<i class="fas fa-search"></i>

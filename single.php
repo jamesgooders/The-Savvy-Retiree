@@ -14,19 +14,22 @@
 					in <a href="#"><?php echo get_the_category_list(', ') ?></a>
 					<?php } ?>
 					</div>
+
+					<div class="img-wrapper">
 					<div class="card-image">
+
+					
 						<img src="<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>" alt="Card Image">
 					</div>
 					<div class="card-description">
 						<?php the_content(); ?>
 					</div>
+
+					</div>
 				</div>
 
 				<div id="comments-section">
-					
-
-					
-
+		
 					<?php } ?>
 
 				</div>

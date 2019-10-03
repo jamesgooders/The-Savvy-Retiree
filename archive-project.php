@@ -23,10 +23,14 @@
 		?>
 
 		<div class="card">
+
+		<div class="img-wrapper">
 			<div class="card-image">
 				<a href="<?php the_permalink(); ?>">
 					<img src="<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>" alt="Card Image">
 				</a>
+			</div>
+
 			</div>
 
 			<!-- This displays the titles and adds in the permalink to the posts/projects -->

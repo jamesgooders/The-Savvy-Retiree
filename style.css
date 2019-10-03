@@ -135,7 +135,7 @@ nav {
 }
 
 nav a {
-	padding: 0 15px;
+	padding: 0 10px;
 	color: #eee;
 	transition: 0.4s;
 }
@@ -161,7 +161,7 @@ nav ul {
 #logo-img {
 	display: flex;
 	height: 100%;
-	padding: 5px 32px 0px 32px;
+	padding: 5px 10px 0px 32px;
 	align-items: center;
 	color: white;
 	transition: 0.4s;
@@ -274,6 +274,11 @@ section {
 	text-align: center;
 }
 
+.img-wrapper {
+	max-width: 90%;
+	overflow: hidden;
+}
+
 /*Card*/
 
 .card-image {
@@ -293,7 +298,11 @@ section {
 }
 
 .card-image:hover {
-	box-shadow: 0 10px 6px -6px #777;
+	transform:scale(1.1);
+    -ms-transform:scale(1.1); /* IE 9 */
+    -moz-transform:scale(1.1); /* Firefox */
+    -webkit-transform:scale(1.1); /* Safari and Chrome */
+    -o-transform:scale(1.1); /* Opera */
 }
 
 .card .card-description {
@@ -341,7 +350,7 @@ section {
 /*Footer*/
 
 footer {
-	background: #1b2c6a;
+	background: #23418e;
 	padding: 8px;
 	color: #eee;
 	display: flex;
@@ -483,7 +492,7 @@ footer #social-media-footer ul li:hover a .fab {
 /*Sidebar*/
 
 #sidebar, #sidebar-search {
-	background: #1b2c6a;
+	background: #23418e;
 	flex: 1;
 	padding: 8px 16px;
 	color: white;
@@ -665,9 +674,29 @@ footer #social-media-footer ul li:hover a .fab {
 	max-width: 100%;
 }
 
+
+
 /*Media Queries*/
 
-@media(max-width: 900px) {
+@media(max-width: 1375px) {
+ nav {
+	 font-size: 17px;
+ }
+}
+
+@media(max-width: 1242px) {
+	nav {
+		font-size: 15px;
+	}
+   }
+
+   @media(max-width: 1154px) {
+	nav {
+		font-size: 14px;
+	}
+   }
+
+@media(max-width: 1110px) {
 
 	#banner {
 		height: 40vh;

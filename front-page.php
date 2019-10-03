@@ -16,7 +16,7 @@
 
 		$args = array(
 			'post_type' => 'post',
-			'posts_per_page' => 2,
+			'posts_per_page' => 10,
 		);
 
 		$blogposts = new WP_Query($args);
@@ -29,10 +29,14 @@
 		?>
 
 		<div class="card">
+
+		<div class="img-wrapper">
 			<div class="card-image">
 				<a href="<?php the_permalink(); ?>">
-					<img src="<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>" alt="Woodlock House">
+					<img src="<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>" alt="">
 				</a>
+			</div>
+
 			</div>
 			<div class="card-description">
 				<a href="<?php the_permalink(); ?>">
@@ -52,7 +56,11 @@
 		
 	</section>
 
+
+
+	<a href="<?php echo site_url('/projects'); ?>">
 	<h2 class="section-heading">All Projects</h2>
+	</a>
 
 	<section>
 		<?php
@@ -72,10 +80,14 @@
 		?>
 
 		<div class="card">
+
+		<div class="img-wrapper">
 			<div class="card-image">
 				<a href="<?php the_permalink(); ?>">
-					<img src="<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>" alt="Woodlock House">
+					<img src="<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>" alt="">
 				</a>
+			</div>
+
 			</div>
 			<div class="card-description">
 				<a href="<?php the_permalink(); ?>">
