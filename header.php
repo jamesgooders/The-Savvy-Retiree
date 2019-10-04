@@ -15,7 +15,7 @@
 		<ul>
 		<li><a href="<?php echo site_url(''); ?>">Home</a></li>
 		<li><a href="<?php echo site_url('/blog'); ?>">Retire Early</a></li>
-		<li><a href="<?php echo site_url('/projects'); ?>">Right Sizing</a></li>
+		<li><a href="<?php echo site_url('/category/diy-gardening/'); ?>">Right Sizing</a></li>
 		<li><a href="<?php echo site_url('/about'); ?>">Health & Wellbeing</a></li>
 		<li><a href="<?php echo site_url('/about'); ?>">Roving Retirement</a></li>
 		<li><a href="<?php echo site_url('/about'); ?>">Lifestyle</a></li>
@@ -50,8 +50,8 @@
 		>Retire Early</a>
 		</li>
 		
-		<li><a href="<?php echo site_url('/projects'); ?>"
-		<?php if(get_post_type() == 'project') echo 'class="active"' ?>
+		<li><a href="<?php echo site_url('/category/diy-gardening/'); ?>"
+		<?php if(is_category() == 'diy-gardening' ) echo 'class="active"' ?>
 		>Right Sizing</a>
 		</li>
 		
