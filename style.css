@@ -282,13 +282,15 @@ section {
 /*Card*/
 
 .card-image {
-	transition: 0.4s;
+	transition: 0.9s;
 }
 
 /*This might need deleting*/
 
 .card-image img {
-	width: 800px;
+	width: 500px;
+	height: 300px;
+	object-fit: cover;
 	max-width: 100%;
 }
 
@@ -736,19 +738,26 @@ footer #social-media-footer ul li:hover a .fab {
 @media(max-width: 719px) {
 
 	#banner {
-		height: 30vh;
+		height: 50vh;
 	}
 
 		main {
-			width: 95%;
+			width: 90%;
 		}
 
 		section {
 			flex-direction: column;
 		}
 
-		.card .card-img img {
+		.card-img img {
 			width: 100%;
+			display: block;
+			margin: 0 auto;
+			
+		}
+
+		.img-wrapper {
+			max-width: none;
 		}
 
 		footer {
@@ -763,19 +772,19 @@ footer #social-media-footer ul li:hover a .fab {
 		}
 
 		footer #right-footer {
-			background: #eee;
-			color: #1b2c6a;
+			background: #23418e;
+			color: white;
 		}
 
 		footer #right-footer a {
-			color: #1b2c6a;
+			color: #23418e;;
 		}
 
 		footer #social-media-footer a .fa-facebook,
 		footer #social-media-footer a .fa-twitter,
 		footer #social-media-footer a .fa-youtube,
 		footer #social-media-footer a .fa-instagram {
-			color: #1b2c6a;
+			color: white;
 			transition: 0.4s;
 		}
 	}
@@ -820,7 +829,7 @@ footer #social-media-footer ul li:hover a .fab {
 		width: 45%;
 	}
 
-	.card .car-imgage img {
+	.card .card-image img {
 		width: 100%;
 	}
 }

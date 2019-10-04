@@ -58,59 +58,7 @@
 
 
 
-	<a href="<?php echo site_url('/projects'); ?>">
-	<h2 class="section-heading">All Projects</h2>
-	</a>
-
-	<section>
-		<?php
-
-		$args = array(
-			'post_type' => 'project',
-			'posts_per_page' => 2,
-		);
-
-		$projects = new WP_Query($args);
-
-		while($projects->have_posts()) {
-			$projects->the_post();
-		 
-
-
-		?>
-
-		<div class="card">
-
-		<div class="img-wrapper">
-			<div class="card-image">
-				<a href="<?php the_permalink(); ?>">
-					<img src="<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>" alt="">
-				</a>
-			</div>
-
-			</div>
-			<div class="card-description">
-				<a href="<?php the_permalink(); ?>">
-					<h3><?php the_title(); ?></h3>
-				</a>
-				<p><?php echo wp_trim_words(the_excerpt(), 30);?></p>
-
-				
-
-				<a href="<?php the_permalink(); ?>" class="btn-readmore">Find Out More</a>
-
-			
-			</div>
-		</div>
-		
-		<?php }
-
-		wp_reset_query(); 
-
-		?>
-		
 	
-	</section>
 
 	<!-- <h2 class="section-heading">Source Code</h2>
 
