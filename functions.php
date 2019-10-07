@@ -82,6 +82,11 @@ add_action('widgets_init', 'gt_widgets');
 // }
 
 
+register_nav_menus( array(
+	'primary' => esc_html__( 'Header', 'jameso' ),
+) );
+
+
 
 
 
