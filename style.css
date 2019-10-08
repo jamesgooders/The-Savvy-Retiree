@@ -255,7 +255,7 @@ nav a:hover {
 	top: -18px;
 	left: 0;
 	width: 90%;
-	color: #d7b221;
+	color: #B3995D;
 	font-family: Genericons;
 	font-size: 16px;
 	line-height: 1;
@@ -351,19 +351,7 @@ nav a:hover {
     text-transform: none;
     letter-spacing: 0;
   }
-  .main-navigation ul ul:before {
-    content: '\f500';
-    display: block;
-    position: absolute;
-    top: -1em;
-    left: 0;
-    width: 100%;
-    color: #d7b221;
-    font-family: Genericons;
-    font-size: 16px;
-    line-height: 1;
-    text-align: center;
-  }
+
   .main-navigation ul li:hover > ul,
   .main-navigation ul li.focus > ul {
     left: 50%;
@@ -382,15 +370,17 @@ nav a:hover {
   }
   .main-navigation ul > li.page_item_has_children > a:after,
   .main-navigation ul > li.menu-item-has-children > a:after {
-    content: '\f431';
+    
     display: inline-block;
     margin-left: 6px;
-    font-family: Genericons;
-    vertical-align: bottom;
+	vertical-align: bottom;
+	font-family: "Font Awesome 5 Free"; 
+	font-weight: 900; 
+	content: "\f054";
   }
   .main-navigation ul ul > li.page_item_has_children > a:after,
   .main-navigation ul ul > li.menu-item-has-children > a:after {
-    transform: rotate(-90deg);
+   
     position: relative;
     top: -1px;
   }
@@ -446,6 +436,10 @@ section {
 
 .card-image {
 	transition: 0.9s;
+}
+
+.card-search {
+	display: inline-grid;
 }
 
 /*This might need deleting*/
@@ -586,8 +580,13 @@ footer #social-media-footer ul li:hover a .fab {
 	margin-top: 120px;
 }
 
+.page-heading {
+	clear: both;
+}
+
 .search-heading {
 	margin-top: 20px;
+	display: block;
 }
 
 .heading-404 {
@@ -907,9 +906,12 @@ footer #social-media-footer ul li:hover a .fab {
 
 /* Search Page */
 
+
 .search-list li {
 	list-style: none;
+	float: left;
 }
+
 
 /* Contact Form */
 
@@ -937,6 +939,35 @@ footer #social-media-footer ul li:hover a .fab {
 .container-404 img {
 	width: 100%;
 	max-width: 100%;
+}
+
+.spicewpsearchform{
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 24px;
+    margin-top: 1px;
+    z-index: 9999;
+    padding: 20px;  
+}
+
+/**Css for image search icon**/
+.spicewpsearch_icon {
+   background-image: url('images/search-icon.png');
+   background-repeat: no-repeat;
+   padding: 0 0 0 36px;
+   background-position: 5px center;
+   background-color: transparent;
+   background-size: 18px 18px;
+       
+}
+
+.search_icon {
+	padding-left: 40px;
+}
+
+.screen-reader-text, .search-submit {
+	display: none;
 }
 
 /*Media Queries*/
@@ -967,6 +998,12 @@ footer #social-media-footer ul li:hover a .fab {
 
 	h1 {
 		font-size: 64px;
+	}
+
+	.spicewpsearchform {
+		right: auto;
+		top: 10px;
+
 	}
 
 	#menu-icon {
@@ -1081,13 +1118,17 @@ footer #social-media-footer ul li:hover a .fab {
 	main {
 		width: 95%;
 	}
-
 	.card {
 		width: 45%;
 	}
+	
 
 	.card .card-image img {
 		width: 100%;
+	}
+
+	.card-search {
+		width: 49%;
 	}
 }
 
@@ -1097,56 +1138,6 @@ footer #social-media-footer ul li:hover a .fab {
 	}
 }
 
-.spicewpsearchform{
-    display: block;
-    width: 500px;
-    position: absolute;
-    right: 0;
-    top: 100%;
-    margin-top: 1px;
-    z-index: 9999;
-    background: #fff;
-    padding: 20px;
-    border: 5px solid #d05353;
-}
-input#spicewpsearchform[type="text"] {
-    width: 78%;
-    height: auto;
-    border: 1px solid #5ca2df;
-    padding: 11px 12px;
-    border-radius: 0px !important; 
-    }
-input#spicewpsearchform[type="submit"] {
-    line-height: 1;
-    padding: 14px 20px;
-    border-radius: 0px;
-    height: auto;
-    font-size: 15px;
-    display: inline-block;
-    border: 1px solid #5ca2df;
-}
-#spicewpsearchform:before {
-    border-color: transparent transparent #d05353;
-    border-style: solid;
-    border-width: 0.5em;
-    content: "";
-    display: block;
-    position: absolute;
-    right: 22px;
-    top: -20px;
-    z-index: 10;
-}
-
-/**Css for image search icon**/
-.spicewpsearch_icon {
-   background-image: url('images/search-icon.png');
-   background-repeat: no-repeat;
-   padding: 0 0 0 36px;
-   background-position: 5px center;
-   background-color: transparent;
-   background-size: 18px 18px;
-       
-}
 
 
 

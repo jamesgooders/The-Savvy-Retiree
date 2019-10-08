@@ -2,8 +2,7 @@
 	<?php get_header(); ?>
 
 <div id="banner">
-	<!-- <h1 id="sv-header"><span id="sr-the">The</span> <span id="sr-header">Savvy Retiree<span></h1> -->
-	<!-- <h3>Jobs Site</h3> -->
+
 
 	<div class="front-page-form">
 				<div class="form-style">
