@@ -18,16 +18,20 @@
 				<img src="<?php echo get_template_directory_uri();?>/img/savvy-retiree-logo.png" alt="Savvy Retiree">
 			</a>
 		</div>
+
+
+
+			
 	<button class="menu-toggle" aria-controls="primary" aria-expanded="false"><i class="fa fa-bars"></i></button>
 	<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary') ); ?>
 
 
+	
 </nav>
 
 
-	<div id="searchbox">
-	<?php get_search_form(); ?>
-	</div>
+	
+
 
 	<?php if(!is_front_page()) { ?>
 

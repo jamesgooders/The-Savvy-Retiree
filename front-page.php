@@ -2,8 +2,26 @@
 	<?php get_header(); ?>
 
 <div id="banner">
-	<h1 id="sv-header"><span id="sr-the">The</span> <span id="sr-header">Savvy Retiree<span></h1>
+	<!-- <h1 id="sv-header"><span id="sr-the">The</span> <span id="sr-header">Savvy Retiree<span></h1> -->
 	<!-- <h3>Jobs Site</h3> -->
+
+	<div class="front-page-form">
+				<div class="form-style">
+					<form action="#SubscribeUrl#" id="LeadGen" method="POST">
+						<div class="inner-wrap">
+							<input class="sign-up" name="source" style="display: none;" type="hidden" value="#PROMOCODE#" /> 
+							<input class="sign-up"  name="NotSaveSignup" style="display: none;" type="hidden" value="False" />
+
+							<input class="sign-up" id="email" name="email" onblur="if(this.value == '') { this.value = 'Enter Your Email Address Here'; }" onfocus="if(this.value == 'Enter Your Email Address Here') { this.value = ''; }" type="text" value="Enter Your Email Address Here">
+						</div>
+						
+						<div class="button-section">
+							<input class="sign-up"  name="submit" style="cursor:pointer" type="submit" value="Submit Email Address">
+						</div>
+
+					</form>
+				</div>
+			</div>
 </div>
 
 <main>
